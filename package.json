@@ -1,0 +1,18 @@
+{
+  "name": "entrega04",
+  "version": "1.0.0",
+  "description": "Primera pre-entrega del proyecto Final",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leandro Troncoso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
