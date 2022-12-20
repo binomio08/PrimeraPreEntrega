@@ -1,0 +1,37 @@
+<div>
+    <h2 class="title">Lista de Prodcutos</h2>
+
+    <table class="listP">
+        <tr>
+            <th>Título</th>
+            <th>Description</th>
+            <th>Precio</th>
+            <th>Imagén</th>
+        </tr>
+        {{#if products.length}}
+        {{#each products}}
+        <tr>
+            <th>{{this.title}}</th>
+            <th>{{this.description}}</th>
+            <th>{{this.price}}</th>
+            <th><img height="72px" width="72px" src="{{this.thumbnail}}"/></th>
+        </tr>
+        {{/each}}
+        {{/if}}
+    </table>
+</div>
+
+<style>
+    table, th, td {
+        border: 1px solid;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .listP {
+        width: 100%;
+    }
+</style>
+

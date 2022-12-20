@@ -2,7 +2,7 @@ import { Router } from "express";
 import FileManager from "../manager/product_manager.js";
 
 //donde se van a guardar los productos
-const fileManager = new FileManager('produtcs.json')
+export const fileManager = new FileManager('produtcs.json')
 const router = Router()
 
 //llamamos al fileManager y consultamos productos
